@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Google maps test</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window.
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+         */
+    </style>
+</head>
+
+<body>
+    Center map to this location: <input type="text" id="address" name="address" />&nbsp;
+    <input type="button" id="doGeocoding" value="Do centering" />
+    <br/><br/>
+    <div id="map"></div>
+</body>
+
+<!-- Check this nice explanation: https://bitsofco.de/async-vs-defer/ -->
+<!-- Get Google maps API Key: https://developers.google.com/maps/documentation/javascript/get-api-key -->
+<!-- the asnc attribute specifies that the HTML parser doesn't need to pause for the script to load and execute -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRFuHYZVV96PgFipSgV1IFPdULzjrsR1c&callback=initMap" async defer></script>
+<!-- the defer attribute specifies that our script will not run until page has loaded -->
+<script src="scripts/functions.js" defer></script>
+
+</html>

@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Hello</title>
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+    <style>
+        .toggler {
+            width: 500px;
+            height: 200px;
+            position: relative;
+        }
+
+        #button {
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        #effect {
+            width: 240px;
+            height: 170px;
+            padding: 0.4em;
+            position: relative;
+        }
+
+        #effect h3 {
+            margin: 0;
+            padding: 0.4em;
+            text-align: center;
+        }
+
+        .ui-effects-transfer {
+            border: 2px dotted gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to jQuery</h1>
+    <img id="testImg" src="https://www.dike.lib.ia.us/images/sample-1.jpg" />
+    <input type="button" id="btn1" value="Toggle Image" />
+    <input type="button" id="btn2" value="Demo traversal" />
+    <input type="button" id="btn3" value="Do AJAX with jQuery" />
+
+    <ul id="one" class="level-1">
+        <li class="item-i">I</li>
+        <li id="ii" class="item-ii">II
+            <ul class="level-2">
+                <li class="item-a">A</li>
+                <li class="item-b">B
+                    <ul class="level-3">
+                        <li class="item-1">1</li>
+                        <li class="item-2">2</li>
+                        <li class="item-3">3</li>
+                    </ul>
+                </li>
+                <li class="item-c">C</li>
+            </ul>
+        </li>
+        <li class="item-iii">III</li>
+    </ul>
+
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+                <span class="subchild"></span>
+            </div>
+        </div>
+        <div class="surrogateParent1"></div>
+        <div class="surrogateParent2"></div>
+    </div>
+
+    <!-- <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Effect</h3>
+            <p>
+                Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing
+                ut, luctus sed, hendrerit vitae, mi.
+            </p>
+        </div>
+    </div> -->
+
+    <select name="effects" id="effectTypes">
+        <option value="blind">Blind</option>
+        <option value="bounce">Bounce</option>
+        <option value="clip">Clip</option>
+        <option value="drop">Drop</option>
+        <option value="explode">Explode</option>
+        <option value="fade">Fade</option>
+        <option value="fold">Fold</option>
+        <option value="highlight">Highlight</option>
+        <option value="puff">Puff</option>
+        <option value="pulsate">Pulsate</option>
+        <option value="scale">Scale</option>
+        <option value="shake">Shake</option>
+        <option value="size">Size</option>
+        <option value="slide">Slide</option>
+        <option value="transfer">Transfer</option>
+    </select>
+
+    <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+<script src="scripts/functions.js"></script>
+
+</html>

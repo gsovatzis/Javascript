@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>jQuery tests</title>
+    <link href="node_modules/jquery-ui-dist/jquery-ui.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form id="contact-form">
+        <fieldset>
+            First Name: <input type="text" name="fName" required minlength="10" /><br /><br />
+            Last Name: <input type="text" name="lName" required /><br /><br />
+            e-mail: <input type="email" name="email" required /><br /><br />
+            Birth date: <input type="text" id="bDate" name="bDate" /><br/><br/>
+            Manager: <input type="text" id="manager" /><br/><br/>
+            <!-- <input type="submit"> -->
+            <input type="button" id="btnSubmit" value="Submit form" />
+        </fieldset>
+    </form>
+
+    <input type="button" id="toggleForm" value="Show/Hide the form" />
+</body>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
